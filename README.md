@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+# NovaChain — Clone de Snapchat
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+NovaChain est une application mobile réalisée dans le cadre d’un projet intensif d’une semaine. Il s’agit d’un clone fonctionnel de Snapchat, développé avec React Native et Expo, en interaction avec une API REST externe.
 
-## Get started
+## Objectif
 
-1. Install dependencies
+Reproduire les fonctionnalités principales de Snapchat :
+- inscription et connexion utilisateur
+- envoi de snaps temporaires (appelés "Nova") avec durée personnalisée
+- réception des snaps avec affichage du compte à rebours
+- ajout et suppression d’amis
+- modification du profil (pseudo, email, photo)
+- suppression définitive du compte
 
-   ```bash
-   npm install
-   ```
+Le projet utilise l’API disponible à l’adresse suivante :  
+[Documentation API Snapchat](https://snapchat.epihub.eu/docs)
 
-2. Start the app
+## Stack technique
 
-   ```bash
-   npx expo start
-   ```
+- React Native (avec Expo Go)
+- JavaScript (ES6)
+- Context API pour la gestion de l’état global
+- Fetch API pour la communication avec l’API REST
 
-In the output, you'll find options to open the app in a
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Fonctionnalités
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Authentification (inscription et connexion)
+- Envoi de snaps avec choix de durée (1 à 10 secondes)
+- Réception des snaps en direct avec minuteur
+- Ajout et suppression d’amis
+- Modification des informations utilisateur
+- Suppression du compte
